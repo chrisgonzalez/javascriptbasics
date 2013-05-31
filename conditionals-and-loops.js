@@ -103,3 +103,30 @@ var myMomsAge = 45;
 		console.log( typeof someStuff[i] ); //this will print out the data type of each item in the array
 
 	}
+
+//The FOR... IN Loop
+
+	/* 
+
+	The For...In Loop serves a similar function to the regular For Loop, except you can iterate through Object properties!
+	Let's go back to our lamp example to see what it's made of.
+
+	*/
+
+	var	lamp = {					//let's instantiate our Variable, and add some properties this time!
+		height: 12,					//properties "height" and "width" are numbers
+		width: 4,
+		color: "#0000FF",			//color property is a hex code, written as a String
+		on: true					//property "on" is a Boolean, which can be 'true' or 'false'
+	}
+
+	//Anatomy of a for... in loop
+	//for(var property 			//create a variable to represent the name of the property as we go through the object
+	//    in lamp)				//says what object we're going to inspect
+	
+	console.log("tracing out lamp properties!");
+
+	for(var property in lamp){
+		console.log("property name: "+ property); 		//this will trace out the NAME of the property only
+		console.log("property value: "+lamp[property]) 	//because "property" is a string, we have to use the brackets to access the value of it (remember the lamp example!)
+	}
