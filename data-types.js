@@ -3,6 +3,7 @@
 */
 
 //this is a Variable! We can associate any kind of data with it
+	
 	var data;
 
 
@@ -94,6 +95,7 @@
 	lamp = {						//let's re-instantiate our Variable, and add some properties this time!
 		height: 12,					//properties "height" and "width" are numbers
 		width: 4,
+		color: "#0000FF",			//color property is a hex code, written as a String
 		on: true					//property "on" is a Boolean, which can be 'true' or 'false'
 	}
 
@@ -102,6 +104,7 @@
 	console.log(lamp); //this will trace the whole object
 	console.log("Lamp height: " + lamp.height); //this will trace out the string "Lamp height: ", followed by the value of the Property 'height' we declared above
 	console.log("Lamp width: " + lamp.width);
+	console.log("Lamp color: " + lamp.color);
 	console.log("Is the lamp on? "+ lamp.on);
 
 
