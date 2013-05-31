@@ -54,6 +54,18 @@
 	data[0][0];					//pulls the first item (an array), and the first item of that array (in this case, 1)
 
 
+//Boolean *********************************************/
+
+	/*
+
+	Booleans are useful, simple data types for storing true and false;
+
+	*/
+
+	data = false;  	//set data equal to false
+	data = true;	//or true
+
+
 // Objects *********************************************/
 
 	/*
@@ -72,16 +84,14 @@
 	//This is the basic way to define an Object and store it in a Variable so you can access it later
 	//NOTE: What we're defining here is an EMPTY object. It has no properties, methods, or anything useful.
 
-	var lamp = {} 
-
-
+	var lamp = {}; 
 
 	//Now let's try adding some Properties to a lamp object
 	//Adding properties to an Object can be done in several ways,
 	//this way allows you to initialize the Object and set some properties in one step
 
 
-	var lamp = {					//declare a variable called lamp, so we can reference later and assign an Object to the Variable
+	lamp = {						//let's re-instantiate our Variable, and add some properties this time!
 		height: 12,					//properties "height" and "width" are numbers
 		width: 4,
 		on: true					//property "on" is a Boolean, which can be 'true' or 'false'
@@ -97,8 +107,8 @@
 
 	//Now let's turn the lamp off!
 
-	lamp.on = false; //easy :)
+	lamp.on = false; // easy :)
 
-	//Let's make sure it works!
+	//Let's make sure it worked!
 
 	console.log("Is the lamp on? "+ lamp.on);
