@@ -99,6 +99,20 @@
 		on: true					//property "on" is a Boolean, which can be 'true' or 'false'
 	}
 
+	//You could also add the properties one-at-a-time, like:
+
+	lamp.height = 12;
+	lamp.width = 4;
+	lamp.color = "#0000FF";
+	lamp.on = true;
+
+	//Another way to access properties looks suspiciously like accessing items in an array:
+
+	lamp["height"] = 12;
+	lamp["width"] = 4;
+	lamp["color"] = "#0000FF";
+	lamp["on"] = true;
+
 	//Let's trace out our lamp properties in the browser console
 
 	console.log(lamp); //this will trace the whole object
